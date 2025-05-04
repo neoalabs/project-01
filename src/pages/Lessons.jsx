@@ -4,7 +4,7 @@ import { BookOpenIcon, PencilSquareIcon, CalculatorIcon } from '@heroicons/react
 
 const Lessons = () => {
   // Static lesson data - would come from an API in a real application
-  const [lessonsData, setLessonsData] = useState({
+  const [lessonsData, _setLessonsData] = useState({
     reading: [
       { id: 'r1', title: "Reading Strategies", status: "Completed", completion: 100 },
       { id: 'r2', title: "Vocabulary in Context", status: "In Progress", completion: 60 },

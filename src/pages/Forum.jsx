@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { 
-  ChatAltIcon, 
+  ChatBubbleOvalLeftIcon, // Replaced ChatAltIcon
   ClockIcon, 
   ChevronUpIcon, 
-  ChatIcon, 
-  SearchIcon,
-  FilterIcon,
+  ChatBubbleLeftIcon, // Replaced ChatIcon
+  MagnifyingGlassIcon, // Replaced SearchIcon
+  FunnelIcon, // Replaced FilterIcon
   UserGroupIcon,
   QuestionMarkCircleIcon,
   FireIcon
@@ -144,7 +144,7 @@ const Forum = () => {
           {/* Search bar */}
           <div className="relative w-full md:w-64">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <SearchIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+              <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
             </div>
             <input
               type="text"
@@ -193,7 +193,7 @@ const Forum = () => {
           
           {/* New thread button - placeholder for now */}
           <button className="hidden md:flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
-            <ChatAltIcon className="h-5 w-5 mr-2" />
+            <ChatBubbleOvalLeftIcon className="h-5 w-5 mr-2" />
             New Discussion
           </button>
         </div>
@@ -201,14 +201,14 @@ const Forum = () => {
         {/* Mobile new thread button */}
         <div className="md:hidden mb-6">
           <button className="w-full flex items-center justify-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
-            <ChatAltIcon className="h-5 w-5 mr-2" />
+            <ChatBubbleOvalLeftIcon className="h-5 w-5 mr-2" />
             New Discussion
           </button>
         </div>
         
         {/* Thread count */}
         <div className="flex items-center mb-4 text-sm text-gray-500">
-          <FilterIcon className="h-4 w-4 mr-1" />
+          <FunnelIcon className="h-4 w-4 mr-1" />
           <span>Showing {filteredThreads.length} threads</span>
         </div>
         
@@ -256,7 +256,7 @@ const Forum = () => {
                         </span>
                         
                         <span className="flex items-center">
-                          <ChatIcon className="h-3.5 w-3.5 mr-1" />
+                          <ChatBubbleLeftIcon className="h-3.5 w-3.5 mr-1" />
                           {thread.replies} {thread.replies === 1 ? 'reply' : 'replies'}
                         </span>
                         
@@ -297,7 +297,7 @@ const Forum = () => {
                       onClick={() => handleReply(thread.id)}
                       className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-blue-700 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
                     >
-                      <ChatAltIcon className="h-4 w-4 mr-1.5" />
+                      <ChatBubbleOvalLeftIcon className="h-4 w-4 mr-1.5" />
                       Reply
                     </button>
                   </div>
@@ -329,18 +329,6 @@ const Forum = () => {
             </div>
           </div>
         )}
-        
-        {/* 
-          Future enhancements:
-          1. Implement backend API integration with useEffect to fetch real forum data
-          2. Add thread creation modal/form when "New Discussion" is clicked
-          3. Implement detailed thread view page with complete thread and replies
-          4. Add user authentication check before allowing upvotes
-          5. Implement pagination for large forums
-          6. Add rich text editor for replies with markdown support
-          7. Implement thread sorting options (newest, most upvoted, etc.)
-          8. Add categorization system with more robust filtering
-        */}
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ import {
 
 const TestCenter = () => {
   // Mock test history data - would come from API in real implementation
-  const [testHistory, setTestHistory] = useState([
+  const [testHistory, _setTestHistory] = useState([
     {
       id: '1',
       date: "2025-05-02",

@@ -7,7 +7,7 @@ const Calendar = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   
   // Dummy calendar events data
-  const [calendarEvents, setCalendarEvents] = useState([
+  const [calendarEvents, _setCalendarEvents] = useState([
     { id: 1, date: "2025-05-06", title: "Full SAT Mock Test", type: "Test", time: "9:00 AM - 12:30 PM" },
     { id: 2, date: "2025-05-09", title: "Essay Submission Due", type: "Assignment", time: "11:59 PM" },
     { id: 3, date: "2025-05-12", title: "College Webinar", type: "Webinar", time: "4:00 PM - 5:30 PM" },
