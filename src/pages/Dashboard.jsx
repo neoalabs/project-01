@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProgressBar from './ProgressBar';
-import LessonStatusCard from './LessonStatusCard';
-import TipBox from './TipBox';
-import MilestoneList from './MilestoneList';
+import { FireIcon } from '@heroicons/react/24/solid';
+
+import ProgressBar from '../components/ProgressBar';
+import LessonStatusCard from '../components/LessonStatusCard';
+import TipBox from '../components/TipBox';
+import MilestoneList from '../components/MilestoneList';
 
 // Mock data (would come from API/props in a real app)
 const mockUserData = {

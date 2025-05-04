@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SearchIcon, TrophyIcon, LightningBoltIcon, UserCircleIcon } from '@heroicons/react/solid';
+import { SearchIcon, TrophyIcon, LightningBoltIcon, UserCircleIcon } from '@heroicons/react/24/outline';
 
 const Leaderboard = () => {
   // State for search functionality

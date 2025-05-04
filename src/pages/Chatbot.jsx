@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import MessageBubble from './MessageBubble';
+import MessageBubble from '../components/MessageBubble';
+
 
 const Chatbot = () => {
   // Sample initial messages - this would come from an API in a real implementation

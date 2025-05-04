@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExclamationCircleIcon, CalculatorIcon, AcademicCapIcon, RefreshIcon } from '@heroicons/react/outline';
+import { ExclamationCircleIcon, CalculatorIcon, AcademicCapIcon, RefreshIcon } from '@heroicons/react/24/outline';
 
 const ScoreCalculator = () => {
   // State for input values and results

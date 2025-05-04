@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LessonCard from './LessonCard';
+import LessonCard from '../components/LessonCard';
 import { BookOpenIcon, PencilSquareIcon, CalculatorIcon } from '@heroicons/react/24/outline';
 
 const Lessons = () => {

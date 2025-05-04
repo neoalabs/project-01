@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CalendarIcon, PlusIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
+import { CalendarIcon, PlusIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 const Calendar = () => {
   // State for current date
